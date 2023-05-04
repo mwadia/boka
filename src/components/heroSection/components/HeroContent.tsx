@@ -3,7 +3,6 @@ import {
   HeroLocationIndicator,
   HeroSearchForm,
 } from './heroContent/';
-
 const HeroContent = () => {
   return (
     <>

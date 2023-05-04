@@ -12,3 +12,27 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.slick-prev {
+  left: 3% !important;
+  z-index: 1;
+  background: url('../public/images/icons/slider-arrow-l.png');
+  background-repeat: no-repeat;
+  &::before {
+    display: none;
+  }
+}
+.slick-next {
+  right: 3% !important;
+  z-index: 1;
+  background: url('../public/images/icons/slider-arrow-r.png');
+  background-repeat: no-repeat;
+  &::before {
+    display: none;
+  }
+}
+
+.slick-slide > div {
+  width: 50%;
+  margin: auto;
+}
