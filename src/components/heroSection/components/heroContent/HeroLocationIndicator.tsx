@@ -1,6 +1,6 @@
 const HeroLocationIndicator = () => {
   return (
-    <div className='flex flex-col items-center justify-center lg:flex-row lg:gap-4 mt-4 gap-1'>
+    <div className='flex flex-col items-center justify-center lg:flex-row lg:gap-4 mt-4 gap-1 lg:mb-[110px]'>
       <p className='text-white'>
         It looks like you're in Dhaka Division. Not correct?
       </p>
