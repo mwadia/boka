@@ -10,7 +10,18 @@
   z-index: 1;
 }
 
-.slick-slide > div {
+.slick-next::before {
+  display: none;
+}
+.slick-prev::before {
+  display: none;
+}
+
+.categories-slider .slick-slide > div {
   width: 50%;
   margin: auto;
+}
+
+.businesses-slider .slick-list {
+  width: 102.2%;
 }

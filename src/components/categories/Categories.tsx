@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import {CategoriesSlider} from './components';
-import './CategoriesStyles.css'
 const Categories = () => {
   const [categories, setCategories] = useState([]);
 
