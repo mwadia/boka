@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#FF914D',
+        shallowOrang: '#fffaf8',
       },
       prefix: 'tw-',
     },

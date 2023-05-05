@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* .hero {
-  background-image: url(../public/images/heroSection.png);
-  background-size: auto;
-} */
-
 * {
   padding: 0;
   margin: 0;
@@ -14,22 +9,15 @@
 }
 
 .slick-prev {
-  left: 3% !important;
+  top: 25% !important;
+  left: 1% !important;
   z-index: 1;
-  background: url('../public/images/icons/slider-arrow-l.png');
-  background-repeat: no-repeat;
-  &::before {
-    display: none;
-  }
 }
+
 .slick-next {
-  right: 3% !important;
+  top: 25% !important;
+  right: 1% !important;
   z-index: 1;
-  background: url('../public/images/icons/slider-arrow-r.png');
-  background-repeat: no-repeat;
-  &::before {
-    display: none;
-  }
 }
 
 .slick-slide > div {
