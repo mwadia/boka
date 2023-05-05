@@ -1,0 +1,16 @@
+.slick-prev {
+  top: 25% !important;
+  left: 1% !important;
+  z-index: 1;
+}
+
+.slick-next {
+  top: 25% !important;
+  right: 1% !important;
+  z-index: 1;
+}
+
+.slick-slide > div {
+  width: 50%;
+  margin: auto;
+}

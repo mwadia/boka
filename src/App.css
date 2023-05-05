@@ -8,19 +8,13 @@
   box-sizing: border-box;
 }
 
-.slick-prev {
-  top: 25% !important;
-  left: 1% !important;
-  z-index: 1;
+
+/* .container {
+  padding: 0 155px;
 }
 
-.slick-next {
-  top: 25% !important;
-  right: 1% !important;
-  z-index: 1;
-}
-
-.slick-slide > div {
-  width: 50%;
-  margin: auto;
-}
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0 24px;
+  }
+} */

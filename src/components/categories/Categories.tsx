@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import {CategoriesSlider} from './components';
-
+import './CategoriesStyles.css'
 const Categories = () => {
   const [categories, setCategories] = useState([]);
 
@@ -12,7 +12,7 @@ const Categories = () => {
   }, []);
 
   return (
-    <section className='w-full px-[100px]'>
+    <section className='px-[100px]'>
       <CategoriesSlider categories={categories} />
     </section>
   );
