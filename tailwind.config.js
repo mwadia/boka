@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         primary: '#FF914D',
         shallowOrang: '#fffaf8',
+        businessTitle: '#02323D',
       },
       prefix: 'tw-',
     },

@@ -2,9 +2,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import Category from './Category';
+import { CustomArrowProps } from 'react-slick';
 
 const CategoriesSlider = ({ categories }: any) => {
-  var settings = {
+  const settings = {
     dots: false,
     infinite: false,
     speed: 500,
@@ -39,20 +40,28 @@ const CategoriesSlider = ({ categories }: any) => {
     ],
   };
 
-  const PrevArrow = (props: any) => (
+  const PrevArrow = ({
+    currentSlide,
+    slideCount,
+    ...props
+  }: CustomArrowProps) => (
     <div {...props}>
       <img src='./images/icons/slider-arrow-l.png' alt='' />
     </div>
   );
 
-  const NextArrow = (props: any) => (
+  const NextArrow = ({
+    currentSlide,
+    slideCount,
+    ...props
+  }: CustomArrowProps) => (
     <div {...props}>
       <img src='./images/icons/slider-arrow-r.png' alt='' />
     </div>
   );
 
   return (
-    <div className='py-[120px]'>
+    <div className='lg:py-[120px] sm:py-[80px] py-[50px]'>
       <Slider
         prevArrow={<PrevArrow />}
         nextArrow={<NextArrow />}
