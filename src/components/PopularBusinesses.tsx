@@ -1,4 +1,4 @@
-import BusinessesSection from '../shared/BusinessesSection/BusinessesSection';
+import BusinessesSection from './shared/BusinessesSection/BusinessesSection';
 
 const PopularBusinesses = () => {
   return (

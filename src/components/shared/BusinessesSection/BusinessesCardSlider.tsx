@@ -70,18 +70,20 @@ const BusinessesCardSlider = ({ businessImages }: any) => {
   return (
     <div>
       <Slider
-        className='card-slider '
+        className='card-slider rounded-t-[12px] w-[300px] h-full'
         prevArrow={<PrevArrow />}
         nextArrow={<NextArrow />}
         {...settings}
       >
         {businessImages.map((image: any) => (
-          <img
-            className='contain bg-no-repeat'
-            key={image.id}
-            src={image.imageUrl}
-            alt={image.imageUrl}
-          />
+          <div className='w-full h-[147px]'>
+            <img
+              className='cover bg-center w-full h-full'
+              key={image.id}
+              src={image.imageUrl}
+              alt={image.imageUrl}
+            />
+          </div>
         ))}
       </Slider>
     </div>

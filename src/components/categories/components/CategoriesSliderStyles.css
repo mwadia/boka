@@ -22,6 +22,19 @@
   margin: auto;
 }
 
-.businesses-slider .slick-list {
+.businesses-slider .slick-slide {
   width: 102.2%;
+}
+
+.businesses-slider .slick-track {
+  padding-top: 12px;
+}
+
+.card-slider .slick-list {
+  border-radius: 12px 12px 0 0;
+}
+
+.card-slider .slick-track {
+  padding: 0;
+  margin: 0;
 }
