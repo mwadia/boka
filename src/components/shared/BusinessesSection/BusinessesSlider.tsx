@@ -12,7 +12,16 @@ const BusinessesSlider = ({ businessesList }: any) => {
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1847,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1527,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
@@ -21,7 +30,24 @@ const BusinessesSlider = ({ businessesList }: any) => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 1221,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 957,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -29,10 +55,11 @@ const BusinessesSlider = ({ businessesList }: any) => {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 661,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          initialSlide: 2,
         },
       },
     ],
@@ -43,7 +70,10 @@ const BusinessesSlider = ({ businessesList }: any) => {
     slideCount,
     ...props
   }: CustomArrowProps) => (
-    <div {...props} className='absolute top-[-50px] right-10 cursor-pointer'>
+    <div
+      {...props}
+      className='absolute top-[-50px] right-[60px] cursor-pointer'
+    >
       <img src='./images/icons/slider-arrow-l.png' alt='' />
     </div>
   );
@@ -53,7 +83,7 @@ const BusinessesSlider = ({ businessesList }: any) => {
     slideCount,
     ...props
   }: CustomArrowProps) => (
-    <div {...props} className='absolute top-[-50px] right-0 cursor-pointer'>
+    <div {...props} className='absolute top-[-50px] right-5 cursor-pointer'>
       <img src='./images/icons/slider-arrow-r.png' alt='' />
     </div>
   );
