@@ -15,8 +15,8 @@ const BusinessesSection = ({ businessTitle }: any) => {
 
   return (
     <Container>
-      <section className='pt-[80px]  gb-red-400'>
-        <h1 className='font-[700] text-[36px] text-businessTitle mb-[20px]'>
+      <section className=' flex flex-col gap-5'>
+        <h1 className='font-[700] text-[36px] text-businessTitle'>
           {businessTitle}
         </h1>
         <BusinessesSlider businessesList={businessesList} />
