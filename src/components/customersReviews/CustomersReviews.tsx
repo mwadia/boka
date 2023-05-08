@@ -10,7 +10,7 @@ const CustomersReviews = () => {
 
   return (
     <Container>
-      <div className='flex flex-col items-center'>
+      <div className='flex flex-col items-center mb-8'>
         <h1 className='font-[700] text-[36px] text-businessTitle mb-[30px]'>
           What our happy customers say
         </h1>
