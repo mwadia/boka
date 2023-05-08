@@ -7,6 +7,7 @@ import FeaturedBusinesses from './components/FeaturedBusinesses';
 import HairSalons from './components/HairSalons';
 import Image from './components/shared/Image';
 import PopularCategories from './components/PopularCategories';
+import BokaTransformation from './components/bokaTransformation/BokaTransformation';
 function App() {
   return (
     <div>
@@ -17,6 +18,7 @@ function App() {
       <FeaturedBusinesses />
       <HairSalons />
       <PopularCategories />
+      <BokaTransformation />
     </div>
   );
 }
