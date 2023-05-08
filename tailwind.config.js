@@ -9,6 +9,7 @@ module.exports = {
         primary: '#FF914D',
         shallowOrang: '#fffaf8',
         businessTitle: '#02323D',
+        bgTrans: '#FFFAF8',
       },
       prefix: 'tw-',
     },

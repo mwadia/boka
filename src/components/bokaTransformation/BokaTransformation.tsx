@@ -3,7 +3,7 @@ import TransformationImage from './TransformationImage';
 
 const BokaTransformation = () => {
   return (
-    <Container bgColor={'[#FFFAF8]'}>
+    <Container bgColor='bgTrans'>
       <div>
         <div className='flex justify-between w-full mb-[30px]'>
           <h1 className='font-[700] text-[36px] text-businessTitle'>
