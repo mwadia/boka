@@ -2,9 +2,9 @@ import Image from '../components/shared/Image';
 import Container from './shared/Container';
 const PopularCategories = () => {
   return (
-    <Container>
+    <Container className='bg-red'>
       <div>
-        <div className='flex justify-between items-center mb-[20px]'>
+        <div className='flex justify-between items-center mb-[30px]'>
           <h1 className='font-[700] text-[36px] text-businessTitle '>
             Popular Categories
           </h1>
