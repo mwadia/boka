@@ -2,16 +2,31 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import BusinessesSlider from './BusinessesSlider';
 import Container from '../Container';
+import MyLoader from '../Skelton';
 
 const BusinessesSection = ({ businessTitle }: any) => {
   const [businessesList, setBusinessesList] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  async function fetchBusinesses() {
+    try {
+      const response = await axios(
+        'https://api.dev.boka.co/business-management/businesses'
+      ).then((data) => setBusinessesList(data.data.data));
+      setLoading(false);
+    } catch (error) {
+      console.error(error);
+      setBusinessesList([]);
+      setLoading(false);
+    }
+  }
 
   useEffect(() => {
-    axios('https://api.dev.boka.co/business-management/businesses').then(
-      (data) => setBusinessesList(data.data.data)
-    );
+    fetchBusinesses();
+    // axios('https://api.dev.boka.co/business-management/businesses').then(
+    //   (data) => setBusinessesList(data.data.data)
+    // );
   }, []);
-  console.log(businessesList);
 
   return (
     <Container>
@@ -19,7 +34,11 @@ const BusinessesSection = ({ businessTitle }: any) => {
         <h1 className='font-[700] text-[36px] text-businessTitle'>
           {businessTitle}
         </h1>
-        <BusinessesSlider businessesList={businessesList} />
+        {loading ? (
+          <MyLoader />
+        ) : (
+          <BusinessesSlider businessesList={businessesList} loading={loading} />
+        )}
       </section>
     </Container>
   );
